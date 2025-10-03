@@ -1,7 +1,7 @@
 <project name="HelloWorldProject" default="run" basedir=".">
     
     <!-- Define where to place compiled files -->
-    <property name="src.dir" value="src"/>
+    <property name="src.dir" value="."/>
     <property name="build.dir" value="build"/>
 
     <!-- Task to clean build directory -->
@@ -17,10 +17,11 @@
 
     <!-- Task to run the compiled Java program -->
     <target name="run" depends="compile">
-        <java classname="Main" fork="true">
+        <java classname="New" fork="true">
             <classpath>
                 <pathelement path="${build.dir}"/>
             </classpath>
         </java>
     </target>
 </project>
+
